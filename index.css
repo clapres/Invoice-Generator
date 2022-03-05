@@ -1,6 +1,4 @@
 html, body {
-    margin: 0;
-    padding: 0;
     background: black;
 }
 hr {
@@ -13,21 +11,18 @@ header {
     width: 550px;
     height: 190px;
     background: #3A69D2;
-
+    text-align: center;
     color: #FFFFFF;
+    border-radius: 5px 5px 0 0;
 }
 .title {
     padding-top: 59px;
-    --margin-top: 60px;
     margin-bottom: 0;
     font-family: Inter;
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
     line-height: 40px;
-    /* identical to box height, or 100% */
-
-    text-align: center;
     letter-spacing: -0.02em;
 }
 .thank-you {
@@ -37,19 +32,21 @@ header {
     font-weight: normal;
     font-size: 16px;
     line-height: 28px;
-    /* or 175% */
-
-    text-align: center;
-
     color: #FFFFFF;
 }
 .container {
+    margin-top: 30px;
     max-width: 550px;
-    min-height: 719px;
+    max-height: 719px;
     background: #1F2937;
     margin-left: auto;
     margin-right: auto;
-    padding: 0;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+.container h1 {
+    margin-top:0;
 }
 .wrapper {
     padding-left: 38px;
@@ -61,7 +58,7 @@ header {
     background: #D1D4F4;
     border: 2px solid #FFFFFF;
     border-radius: 7px;
-    cursor:pointer;
+    cursor: pointer;
 }
 #invoice-total {
     padding: 0;
@@ -72,14 +69,11 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 41px;
-
-    
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    /* identical to box height, or 114% */
     color: #4A4E74;
 }
 .detail {
@@ -88,7 +82,6 @@ header {
     justify-content: space-between;
 }
 .detail > p {
-    /* color: pink; */
     margin: 0 0 20px 0;
 }
 .item {
@@ -97,10 +90,6 @@ header {
     font-weight: 500;
     font-size: 24px;
     line-height: 20px;
-    /* or 83% */
-
-    text-align: right;
-
     color: #F5F5F5;
 }
 .dollar-sign{
@@ -119,11 +108,7 @@ header {
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
-    line-height: 32px;
-    /* or 89% */
-
-    text-align: right;
-
+    line-height: 25px;
     color: #F5F5F5;
 }
 
@@ -132,56 +117,39 @@ header {
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
-    line-height: 20px;
     color: #D5D4D8;
-    padding-left: 10px;
-    cursor:pointer;
+    
 }
 
-#invoice-detail {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    /* or 100% */
-    color: #F5F5F5;
-    padding: 0;
-    margin: 0;
-}
 .invoice-static-text {
     font-family: Inter;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 20px;
-    /* or 167% */
-
     color: #D5D4D8;
     padding: 0;
     margin: 30px 0 20px 0;
 }
-
+.invoice-notes {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F5F5F5;
+}
 
 #sendBtn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 9px 17px 9px 15px; 
-
     width: 473px;
     height: 44px;
-
     background: #3A69D2;
-
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 7px;
     border: 0;
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
     color: #FFFFFF;
+    cursor: pointer;
 }
